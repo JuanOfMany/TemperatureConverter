@@ -15,6 +15,10 @@ function CtoF (event) {
     let answer = ( (input.value * 9/5) + 32)
     let result = document.getElementById('result');
     result.innerText = answer;
+    result.innerText = answer;
+    if (isNaN(input.value)) {
+        result.innerText = 'Please Enter A Number.'
+    }
 }
 
 function handleClear (event) {
